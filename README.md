@@ -14,6 +14,16 @@ This is a frontend project that displays a **dynamic, interactive table** using 
 
 ---
 
+
+## 🧠 Approach
+
+- Built with **React** for component-based structure and reactivity.
+- Used **useState** and **useMemo** hooks for managing data transformations like sorting and filtering.
+- Handled search, pagination, and sort logic manually to show core JavaScript skills.
+- Tailwind CSS was chosen to rapidly style components with clean utility-first classes.
+
+---
+
 ## 🛠️ Tech Stack
 
 - [React](https://reactjs.org/)
