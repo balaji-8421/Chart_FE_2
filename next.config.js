@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  experimental: {
+    allowedDevOrigins: ["http://172.22.52.135:3000"], // Replace with your origin
+  },
+};
 
-export default nextConfig
+module.exports = nextConfig;

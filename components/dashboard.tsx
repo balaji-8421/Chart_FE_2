@@ -49,31 +49,31 @@ export default function Dashboard() {
         <p className="text-muted-foreground">Interactive data visualization with multiple chart types</p>
       </header>
 
-      <Tabs defaultValue="overview" value={activeTab} onValueChange={setActiveTab} className="space-y-4">
-        <TabsList className="grid grid-cols-2 md:grid-cols-5 gap-2">
-          <TabsTrigger value="overview" className="flex items-center gap-2">
-            <BarChart3 className="h-4 w-4" />
+      <Tabs defaultValue="overview" value={activeTab} onValueChange={setActiveTab} className="space-y-10">
+      <TabsList className="flex gap-2 overflow-x-auto whitespace-nowrap flex-nowrap">
+          <TabsTrigger value="overview" className="flex items-center gap-1">
+            <BarChart3 className="h-2 w-2" />
             <span className="hidden md:inline">Overview</span>
           </TabsTrigger>
-          <TabsTrigger value="sales" className="flex items-center gap-2">
-            <LineChartIcon className="h-4 w-4" />
+          <TabsTrigger value="table" className="flex items-center gap-1">
+            <TableIcon className="h-2 w-2" />
+            <span className="hidden md:inline">Table</span>
+          </TabsTrigger>
+          <TabsTrigger value="sales" className="flex items-center gap-1">
+            <LineChartIcon className="h-4 w-2" />
             <span className="hidden md:inline">Sales</span>
           </TabsTrigger>
-          <TabsTrigger value="products" className="flex items-center gap-2">
-            <PieChartIcon className="h-4 w-4" />
+          <TabsTrigger value="products" className="flex items-center gap-1">
+            <PieChartIcon className="h-2 w-2" />
             <span className="hidden md:inline">Products</span>
           </TabsTrigger>
-          <TabsTrigger value="customers" className="flex items-center gap-2">
-            <ScatterChartIcon className="h-4 w-4" />
+          <TabsTrigger value="customers" className="flex items-center gap-1">
+            <ScatterChartIcon className="h-2 w-2" />
             <span className="hidden md:inline">Customers</span>
           </TabsTrigger>
-          <TabsTrigger value="channels" className="flex items-center gap-2">
-            <AreaChartIcon className="h-4 w-4" />
+          <TabsTrigger value="channels" className="flex items-center gap-1">
+            <AreaChartIcon className="h-2 w-2" />
             <span className="hidden md:inline">Channels</span>
-          </TabsTrigger>
-          <TabsTrigger value="table" className="flex items-center gap-2">
-            <TableIcon className="h-4 w-4" />
-            <span className="hidden md:inline">Table</span>
           </TabsTrigger>
         </TabsList>
 
@@ -408,6 +408,7 @@ export default function Dashboard() {
             </CardContent>
           </Card>
         </TabsContent>
+
         <TabsContent value="table" className="space-y-4">
           <DataTable />
         </TabsContent>
@@ -415,3 +416,4 @@ export default function Dashboard() {
     </div>
   )
 }
+;
