@@ -51,14 +51,16 @@ export default function Dashboard() {
 
       <Tabs defaultValue="overview" value={activeTab} onValueChange={setActiveTab} className="space-y-10">
       <TabsList className="flex gap-2 overflow-x-auto whitespace-nowrap flex-nowrap">
-          <TabsTrigger value="overview" className="flex items-center gap-1">
-            <BarChart3 className="h-2 w-2" />
-            <span className="hidden md:inline">Overview</span>
-          </TabsTrigger>
+          
           <TabsTrigger value="table" className="flex items-center gap-1">
             <TableIcon className="h-2 w-2" />
             <span className="hidden md:inline">Table</span>
           </TabsTrigger>
+          <TabsTrigger value="overview" className="flex items-center gap-1">
+            <BarChart3 className="h-2 w-2" />
+            <span className="hidden md:inline">Overview</span>
+          </TabsTrigger>
+          
           <TabsTrigger value="sales" className="flex items-center gap-1">
             <LineChartIcon className="h-4 w-2" />
             <span className="hidden md:inline">Sales</span>
